@@ -9,7 +9,16 @@
 <link rel="stylesheet" href="style.css">
 
 </head>
-
+<script>
+fetch("https://api.countapi.xyz/hit/12th-topper-short-notes/visits")
+.then(res => res.json())
+.then(data => {
+    document.getElementById("visitor-count").innerText = data.value;
+})
+.catch(() => {
+    document.getElementById("visitor-count").innerText = "0";
+});
+</script>
 <body>
 
 <!-- Watermark -->
