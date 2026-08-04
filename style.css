@@ -264,3 +264,27 @@ background:linear-gradient(135deg,#444,#222);
 .download-btn:hover{
     background:#c62828;
 }
+.visitor-box{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    padding: 8px 12px;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.2);
+    z-index: 9999;
+}
+
+.eye{
+    font-size:24px;
+    color:#0066ff;
+}
+
+#visitor-count{
+    font-size:18px;
+    font-weight:bold;
+    color:#ff0000;
+}
