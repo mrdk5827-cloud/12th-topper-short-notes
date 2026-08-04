@@ -541,13 +541,18 @@ function togglePhysics() {
 }
 // Chemistry Menu Open / Close
 function toggleChemistry() {
+
+    // पहले Physics बंद करो
+    document.getElementById("physicsMenu").style.display = "none";
+
     var menu = document.getElementById("chemistryMenu");
 
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
-    } else {
-        menu.style.display = "block";
+    if(menu.style.display=="block"){
+        menu.style.display="none";
+    }else{
+        menu.style.display="block";
     }
+
 }
 // Chapter Open / Close
 function toggleChapter(id) {
